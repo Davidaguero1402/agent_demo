@@ -28,3 +28,5 @@ known_actions = {
     "average_dog_weight": average_dog_weight,
     "what is his weigth" : what_is_his_weight
 }
+
+from .routes import route_human

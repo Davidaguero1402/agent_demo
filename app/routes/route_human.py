@@ -1,7 +1,10 @@
 from app import app
-from models.posthumanquerypayload import PostHumanQueryPayload
-from models.posthumanqueryresponse import PostHumanQueryResponse
-from services.controlers import human_query_to_sql, query, build_answer
+from ..models.posthumanquerypayload import PostHumanQueryPayload
+from ..models.posthumanqueryresponse import PostHumanQueryResponse
+
+from ..services.utils_human_query import human_query_to_sql
+from ..services.utils_build_answer import build_answer
+from ..services.utils_query import query
 from fastapi import HTTPException
 
 
